@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {ButtonModule} from 'primeng/button';
 import {DropdownModule} from 'primeng/dropdown';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -24,7 +25,11 @@ import {DropdownModule} from 'primeng/dropdown';
     FormsModule,
     BrowserAnimationsModule,
     ButtonModule,
-    DropdownModule
+    DropdownModule,
+    HttpClientModule
+  ],
+  exports: [
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

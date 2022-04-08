@@ -7,13 +7,15 @@
         </div>
         <div class="col-12 grid">
             <div class="col-4">
-                <div>
+                <div class="col-12 grid">
+                    <p-dropdown [showClear]="true" (onChange)="getSymbolsForExchange()"  [options]="exchanges" [(ngModel)]="selectedExchange" placeholder="Select Exchange">
 
+                    </p-dropdown>
                 </div>
-                <div style="margin-top: 5rem;">
+                <div class="col-12 grid" style="margin-top: 1rem;">
+                    <p-dropdown [showClear]="true" [options]="symbols" [(ngModel)]="selectedSymbol" placeholder="Select Symbol">
 
-
-
+                    </p-dropdown>
 
                 </div>
 
